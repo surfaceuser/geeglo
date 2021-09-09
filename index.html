@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body style="background-color:white;">
+</html>
+<head>
+<title>Geeglo</title>
+<head>
+  <div id="myBar" class="w3-black" style="height:5px;width:0px"></div>
+  </div>
+</div>
+<br>
+<br>
+<center>
+  <img src="resources/logo.png" style="width:208px;height:70px">
+</center>
+<br>
+</head>  
+<style>
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Roboto;
+  margin: 4px 2px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+  .button1 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid #000000;
+  text-align: center;
+  border-radius: 10px;
+}
+
+div.a {
+  text-align: center;
+}
+
+.button1:hover {
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  box-shadow: 3px 3px;
+}
+</style>
+<center>
+  <img src="resources/search-icon.png">
+  <input type="text" id="searchbox" placeholder="Type here to search" style="width: 90%; font-family:Roboto; font-size: 24px; border-radius: 10px; border: solid grey"><br><br>
+</center>
+<div class="a">
+
+<a style="font-family:Roboto; text-align:center" button class="button button1" onclick="move()">🔍Search</a>
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");
+  var search1 = document.getElementById("searchbox")
+  var search = search1.value
+  window.open("https://www.google.com/search?q=" + search, "_parent") 
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 90) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  border-radius: 10px 10px 0 0;
+}
+</style>
+
+<div class="footer">
+  <p>© Copyright 2021 by Geeglo.</p>
+</div>
