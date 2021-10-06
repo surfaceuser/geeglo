@@ -45,13 +45,17 @@ div.a {
   text-align: center;
 }
 
-* {
+@font-face {
   font-family: "SF Pro Text", "Segoe Fluent Icons";
   letter-spacing: 0.2px;
-  src: resources/sf.otf;
-  src: resources/icon.ttf;
+  src: url(resources/sf.otf);
+  src: url(resources/icon.ttf);
 }
 
+* {
+  font-family: "SF Pro Text", "Segoe Fluent Icons";
+}
+  
 .inputbox {
   padding: 12px 12px 12px 15px;
   transition-timing-function: cubic-bezier(.25,.1,.25,1);
