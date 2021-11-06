@@ -5,14 +5,13 @@
 <title>Geeglo</title>
 <style>
 @font-face {
-  font-family: "SF Pro Text", "Segoe Fluent Icons";
+  font-family: "SF Pro Text";
   letter-spacing: 0.2px;
-  src: url("https://surfaceuser.github.io/geeglo/resources/sf.ttf");
-  src: url("https://surfaceuser.github.io/geeglo/resources/SegoeFluentIcons.woff2");
+  src: url("https://surfaceuser.github.io/geeglo/resources/sf.otf");
 }
 
 .inputbox {
-  padding: 12px;
+  padding: 12px 12px 12px 15px;
   transition-timing-function: ease-out;
   transition-duration: 0.3s;
   width: 500px;
@@ -21,7 +20,7 @@
   border-radius: 15px;
   border: solid transparent;
   font-weight: 500;
-  font-family: "SF Pro Text", "Segoe Fluent Icons";
+  font-family: "SF Pro Text";
   letter-spacing: 0.3px;
   background-color: rgb(245, 245, 245);
   display: inline-block;
@@ -33,8 +32,8 @@
 
 .inputbox:focus {
   background-color: white;
-  box-shadow: 0px 4px 14px rgb(210, 210, 210);
-  outline: lightgray solid 2px;
+  box-shadow: 0px 2px 8px rgb(210, 210, 210);
+  outline: lightgray solid 1px;
 
 }
 
@@ -58,7 +57,7 @@
   <img src="resources/geeglo-logo-new.png" width="15%" height="15%">
   <br>
   <br>
-  <input class="inputbox" type="text" id="searchbox" placeholder="  Bạn đang tìm kiếm gì?">
+  <input class="inputbox" type="text" id="searchbox" placeholder="Bạn đang tìm kiếm gì?">
   <div class="button" id="search" onclick="search();"></div>
 </center>
 
@@ -79,6 +78,6 @@ function search() {
 </script>
 
 <div class="footer">
-  <p>Tìm kiếm theo <strong>cách của bạn.</strong></p>
+  <p>Copyright by Geeglo</p>
 </div>
 </html>
