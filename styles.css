@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "SF Pro Display";
-    src: url("https://surfaceuser.github.io/geeglo/resources/sf.otf");
+    font-family: "Segoe UI Variable Static Display";
+    src: url("https://surfaceuser.github.io/geeglo/resources/font.ttf");
   }
   
   .inputbox {
@@ -12,9 +12,8 @@
     font-size: 20px;
     border-radius: 15px;
     border: solid transparent;
-    font-weight: 500;
-    font-family: "SF Pro Display";
-    letter-spacing: 0.2px;
+    font-weight: 600;
+    font-family: "Segoe UI Variable Static Display";
     background-color: rgb(245, 245, 245);
     display: inline-block;
   }
@@ -41,6 +40,5 @@
     padding-right: 25px;
     border-radius: 10px 10px 0 0;
     font-weight: regular;
-    letter-spacing: 0.2px;
-    font-family: "SF Pro Display";
+    font-family: "Segoe UI Variable Static Display";
   }
