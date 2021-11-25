@@ -14,6 +14,15 @@
   <input class="inputbox" type="text" id="searchbox" placeholder="Bạn đang tìm kiếm gì?">
   <div class="button" id="search" onclick="search();"></div>
 </center>
+<script>
+  var input = document.getElementById("searchbox");
+  input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("search").click();
+    }
+  });
+</script>
 <div class="a">
 <div class="footer">
   <p>© Geeglo 2021</p>
