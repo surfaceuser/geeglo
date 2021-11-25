@@ -15,6 +15,9 @@
   <div class="button" id="search" onclick="search();"></div>
 </center>
 <script>
+  window.onload = function() {
+  var input = document.getElementById("searchbox").focus();
+}
   var input = document.getElementById("searchbox");
   input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
