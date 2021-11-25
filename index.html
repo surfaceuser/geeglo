@@ -2,55 +2,9 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles.css">
+<script src="myscripts.js"></script>
 <title>Geeglo</title>
-<style>
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("https://surfaceuser.github.io/geeglo/resources/sf.otf");
-}
-
-.inputbox {
-  padding: 12px 12px 12px 15px;
-  transition-timing-function: ease-out;
-  transition-duration: 0.3s;
-  width: 500px;
-  outline: transparent;
-  font-size: 20px;
-  border-radius: 15px;
-  border: solid transparent;
-  font-weight: 500;
-  font-family: "SF Pro Display";
-  letter-spacing: 0.2px;
-  background-color: rgb(245, 245, 245);
-  display: inline-block;
-}
-
-.inputbox:hover {
-  background-color: rgb(220, 220, 220);
-}
-
-.inputbox:focus {
-  background-color: white;
-  box-shadow: 0px 2px 8px rgb(210, 210, 210);
-  outline: lightgray solid 2px;
-
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-image: linear-gradient(to right, purple, cyan);
-  color: white;
-  text-align: center;
-  padding-right: 25px;
-  border-radius: 10px 10px 0 0;
-  font-weight: regular;
-  letter-spacing: 0.2px;
-  font-family: "SF Pro Display";
-}
-</style>
 <br>
 <br>
 <center>
@@ -60,23 +14,7 @@
   <input class="inputbox" type="text" id="searchbox" placeholder="Bạn đang tìm kiếm gì?">
   <div class="button" id="search" onclick="search();"></div>
 </center>
-
 <div class="a">
-<script>
-var input = document.getElementById("searchbox");
-input.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        document.getElementById("search").click();
-    }
-});
-function search() {
-  var search1 = document.getElementById("searchbox")
-  var search = search1.value
-  window.open("https://www.google.com/search?q=" + search, "_parent")
-}
-</script>
-
 <div class="footer">
   <p>© Geeglo 2021</p>
 </div>
