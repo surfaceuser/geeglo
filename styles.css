@@ -1,5 +1,5 @@
 html {
-  background: url(resources/wallpaper.png) no-repeat center center fixed;
+  background: url('https://github.com/surfaceuser/geeglo/raw/main/resources/wallpaper.png') no-repeat center center fixed;
   background-size: cover
 }
 
