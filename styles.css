@@ -9,7 +9,7 @@ html {
   
 .inputbox {
   padding: 12px 12px 12px 15px;
-  transition: .2s ease-out;
+  transition: .2s ease;
   width: 50%;
   outline: transparent;
   font-size: 20px;
@@ -17,17 +17,19 @@ html {
   border: solid transparent;
   font-weight: 600;
   font-family: system-ui;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
   color: white;
   backdrop-filter: blur(5px);
   display: inline-block;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  text-align: center
 }
 
 .inputbox:focus {
   transform: scale(101%);
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   background-color: rgba(0,0,0,0.7);
+  text-align: left
 }
   
 .footer {
