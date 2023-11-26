@@ -11,8 +11,7 @@ html {
   font-size: 20px;
   border-radius: 10px;
   border: solid rgb(100, 100, 100);
-  font-weight: 600;
-  font-family: system-ui;
+  font-family: monospace;
   background-color: rgb(0, 0, 0);
   color: rgb(100, 100, 100);
   display: inline-block;
