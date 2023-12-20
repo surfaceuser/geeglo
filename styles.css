@@ -28,8 +28,8 @@ html {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+  background-color: rgba(0, 255, 187);
+  color: rgb(0, 0, 0);
   backdrop-filter: blur(5px);
   text-align: center;
   font-family: system-ui;
